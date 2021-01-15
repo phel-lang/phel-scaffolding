@@ -1,0 +1,21 @@
+{
+  "name": "phel/phel-scaffolding",
+  "require": {
+    "ext-readline": "*",
+    "phel/phel": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "phel": {
+      "loader": {
+        "phel-scaffolding\\": "src/"
+      },
+      "loader-dev": {
+        "phel-scaffolding-tests\\": "tests/"
+      },
+      "tests": [
+          "tests/"
+      ]
+    }
+  }
+}

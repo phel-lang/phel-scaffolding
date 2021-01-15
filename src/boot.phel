@@ -1,0 +1,6 @@
+(ns phel-scaffolding\boot)
+
+(defn adder 
+  "An example of a function."
+  [& numbers]
+  (apply + numbers))
