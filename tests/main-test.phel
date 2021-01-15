@@ -1,5 +1,5 @@
-(ns phel-scaffolding-tests\boot-test
-  (:require phel-scaffolding\boot :refer [adder])
+(ns phel-scaffolding-tests\main-test
+  (:require phel-scaffolding\main :refer [adder])
   (:require phel\test :refer [deftest is]))
 
 (deftest test-adder

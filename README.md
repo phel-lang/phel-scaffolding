@@ -20,7 +20,7 @@ You can either use it from your local machine or using docker.
 ### Phel code
 
 1. Write your phel code in `src/`
-1. Execute your code with `vendor/bin/phel run src/boot.phel`
+1. Execute your code with `vendor/bin/phel run src/main.phel`
 
 ### Tests
 
