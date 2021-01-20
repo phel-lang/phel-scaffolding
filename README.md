@@ -9,8 +9,17 @@ This repository provides you the basic setup to start coding phel.
 ### Requirements
 
 Phel requires at least PHP 7.4 and Composer.
-You can either use it from your local machine or using docker.
+You can either use it from your local machine OR using docker.
   - This repository contains the basic Dockerfile to run phel.
+
+#### Locally (no Docker)
+
+1. Ensure you have PHP 7.4 (Some help about how to install multiple PHP vesions locally on [linux](https://github.com/phpbrew/phpbrew) and [Mac](https://github.com/shivammathur/homebrew-php))
+1. Ensure you have [composer](https://getcomposer.org/composer-stable.phar)
+1. Clone this repo
+1. Install the dependencies | `composer install` 
+
+#### Using Docker
 
 1. Clone this repo
 1. Build the image | `docker-compose up --build`
