@@ -1,4 +1,4 @@
-(ns phel-scaffolding\boot)
+(ns phel-scaffolding\main)
 
 (defn adder 
   "An example of a function."
