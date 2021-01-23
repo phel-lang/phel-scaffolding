@@ -1,0 +1,10 @@
+(ns with-php-server\main
+  (:require phel-scaffolding\my-module :refer [adder])
+  (:require phel\html :refer [html doctype]))
+
+(print
+ (html
+  (doctype :html5)
+  [:h1 "Hello World"]
+  [:div "adder result: "
+   [:span @{:style @{:color "red"}} (adder 1 2 3)]]))

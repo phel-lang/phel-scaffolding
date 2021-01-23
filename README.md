@@ -14,7 +14,7 @@ You can either use it from your local machine OR using docker.
 
 #### Locally (no Docker)
 
-1. Ensure you have PHP 7.4 (Some help about how to install multiple PHP vesions locally on [linux](https://github.com/phpbrew/phpbrew) and [Mac](https://github.com/shivammathur/homebrew-php))
+1. Ensure you have PHP 7.4 (Some help about how to install multiple PHP versions locally on [linux](https://github.com/phpbrew/phpbrew) and [Mac](https://github.com/shivammathur/homebrew-php))
 1. Ensure you have [composer](https://getcomposer.org/composer-stable.phar)
 1. Clone this repo
 1. Install the dependencies | `composer install` 
@@ -29,14 +29,16 @@ You can either use it from your local machine OR using docker.
 ### Phel code
 
 1. Write your phel code in `src/`
-1. Execute your code with `vendor/bin/phel run src/main.phel`
+1. Execute your code with `./vendor/bin/phel run example/CommandLine/main.phel`
+1. Or with a PHP server with `php -S localhost:8000 ./example/WithPhpServer/index.php`
 
 ### Tests
 
 1. Write your phel tests in `tests/`
-1. Execute your tests with `vendor/bin/phel test`
+1. Execute your tests with `./vendor/bin/phel test`
 
-> **Important**!
+> ⚠️ **Important**!
+>
 > If you change the loader section in `composer.json`, remember to execute the `composer dump-autoload` to auto-generate them inside the [PhelRuntime](/vendor/PhelRuntime.php).
 
 ## More about starting with phel

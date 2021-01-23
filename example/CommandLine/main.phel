@@ -1,0 +1,4 @@
+(ns command-line\main
+  (:require phel-scaffolding\my-module :refer [adder]))
+
+(println (adder 1 2 3)) # prints 6

@@ -8,7 +8,9 @@
   "extra": {
     "phel": {
       "loader": {
-        "phel-scaffolding\\": "src/"
+        "phel-scaffolding\\": "src/",
+        "command-line\\": "example/CommandLine/",
+        "with-php-server\\": "example/WithPhpServer/"
       },
       "loader-dev": {
         "phel-scaffolding-tests\\": "tests/"
