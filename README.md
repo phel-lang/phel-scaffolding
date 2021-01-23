@@ -1,6 +1,6 @@
 # Phel Scaffolding
 
-[Phel](https://phel-lang.org/) is a function programming language that compiles to PHP. 
+[Phel](https://phel-lang.org/) is a functional programming language that compiles to PHP. 
 
 This repository provides you the basic setup to start coding phel.
 
