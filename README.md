@@ -36,8 +36,8 @@ You can either use it from your local machine OR using docker.
 1. Write your phel tests in `tests/`
 1. Execute your tests with `vendor/bin/phel test`
 
-
-If you create new namespaces, remember to execute the `composer dump-autoload` to auto-generate them inside the [PhelRuntime](/vendor/PhelRuntime.php).
+> **Important**!
+> If you change the loader section in `composer.json`, remember to execute the `composer dump-autoload` to auto-generate them inside the [PhelRuntime](/vendor/PhelRuntime.php).
 
 ## More about starting with phel
 
