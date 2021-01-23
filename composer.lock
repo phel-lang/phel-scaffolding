@@ -4,24 +4,83 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e21987189183e22fa560ea1a744747ec",
+    "content-hash": "b52af42724e3ce448cb29ee5feb6d9e4",
     "packages": [
         {
-            "name": "phel/phel",
-            "version": "dev-master",
+            "name": "phel-lang/phel-composer-plugin",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jenshaase/phel-lang.git",
-                "reference": "a5df9ca5f11c13525f9909bda44f3bb7c0c3557f"
+                "url": "https://github.com/phel-lang/phel-composer-plugin.git",
+                "reference": "9e3af8cfe854ddfae04934c26877a5b989ca7156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenshaase/phel-lang/zipball/a5df9ca5f11c13525f9909bda44f3bb7c0c3557f",
-                "reference": "a5df9ca5f11c13525f9909bda44f3bb7c0c3557f",
+                "url": "https://api.github.com/repos/phel-lang/phel-composer-plugin/zipball/9e3af8cfe854ddfae04934c26877a5b989ca7156",
+                "reference": "9e3af8cfe854ddfae04934c26877a5b989ca7156",
                 "shasum": ""
             },
             "require": {
-                "phel/phel-composer-plugin": "dev-master",
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "composer/composer": "^1.10.0",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9",
+                "vimeo/psalm": "^3.11"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Phel\\Composer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phel\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Haase",
+                    "email": "je.haase@gmail.com"
+                }
+            ],
+            "description": "A composer plugin for the Phel language.",
+            "homepage": "https://phel-lang.org/",
+            "keywords": [
+                "composer",
+                "functional",
+                "language",
+                "lisp",
+                "phel",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/phel-lang/phel-composer-plugin/issues",
+                "source": "https://github.com/phel-lang/phel-composer-plugin/tree/v0.1.0"
+            },
+            "time": "2021-01-17T20:38:50+00:00"
+        },
+        {
+            "name": "phel-lang/phel-lang",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phel-lang/phel-lang.git",
+                "reference": "8bf7c69acb527ef1816485d1a05705681108737e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/8bf7c69acb527ef1816485d1a05705681108737e",
+                "reference": "8bf7c69acb527ef1816485d1a05705681108737e",
+                "shasum": ""
+            },
+            "require": {
+                "phel-lang/phel-composer-plugin": "^0.1",
                 "php": ">=7.4"
             },
             "require-dev": {
@@ -66,7 +125,7 @@
                     "email": "je.haase@gmail.com"
                 }
             ],
-            "description": "Phel is a function programming language that compiles to PHP",
+            "description": "Phel is a functional programming language that compiles to PHP",
             "homepage": "https://phel-lang.org/",
             "keywords": [
                 "functional",
@@ -75,77 +134,17 @@
                 "phel"
             ],
             "support": {
-                "issues": "https://github.com/jenshaase/phel-lang/issues",
-                "source": "https://github.com/jenshaase/phel-lang/tree/master"
+                "issues": "https://github.com/phel-lang/phel-lang/issues",
+                "source": "https://github.com/phel-lang/phel-lang/tree/master"
             },
-            "time": "2021-01-19T16:02:25+00:00"
-        },
-        {
-            "name": "phel/phel-composer-plugin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phel-lang/phel-composer-plugin.git",
-                "reference": "7b8a2cf1c015d46bb088726c33b312ca0d39d3d0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phel-lang/phel-composer-plugin/zipball/7b8a2cf1c015d46bb088726c33b312ca0d39d3d0",
-                "reference": "7b8a2cf1c015d46bb088726c33b312ca0d39d3d0",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1.0 || ^2.0",
-                "php": ">=7.4"
-            },
-            "require-dev": {
-                "composer/composer": "^1.10.0",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phpunit/phpunit": "^9",
-                "vimeo/psalm": "^3.11"
-            },
-            "default-branch": true,
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Phel\\Composer\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Phel\\Composer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jens Haase",
-                    "email": "je.haase@gmail.com"
-                }
-            ],
-            "description": "A composer plugin for the Phel language.",
-            "homepage": "https://phel-lang.org/",
-            "keywords": [
-                "composer",
-                "functional",
-                "language",
-                "lisp",
-                "phel",
-                "plugin"
-            ],
-            "support": {
-                "issues": "https://github.com/phel-lang/phel-composer-plugin/issues",
-                "source": "https://github.com/phel-lang/phel-composer-plugin/tree/master"
-            },
-            "time": "2021-01-17T20:50:35+00:00"
+            "time": "2021-01-23T09:22:31+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "phel/phel": 20
+        "phel-lang/phel-lang": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

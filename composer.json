@@ -1,8 +1,8 @@
 {
-  "name": "phel/phel-scaffolding",
+  "name": "phel-lang/phel-scaffolding",
   "require": {
     "ext-readline": "*",
-    "phel/phel": "dev-master"
+    "phel-lang/phel-lang": "dev-master"
   },
   "minimum-stability": "dev",
   "extra": {
