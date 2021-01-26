@@ -1,0 +1,32 @@
+body {
+    background-color: #512da8;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+div {
+    background: #fff;
+    width: 50%;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+svg.phel-logo {
+    fill: none;
+    stroke: #512da8;
+    stroke-width: 3px;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: auto;
+}

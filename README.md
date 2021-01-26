@@ -30,7 +30,7 @@ You can either use it from your local machine OR using docker.
 
 1. Write your phel code in `src/`
 1. Execute your code with `./vendor/bin/phel run example/CommandLine/main.phel`
-1. Or with a PHP server with `php -S localhost:8000 ./example/WithPhpServer/index.php`
+1. Or with a PHP server with `php -S localhost:8000 -t ./example/WithPhpServer`
 
 ### Tests
 
