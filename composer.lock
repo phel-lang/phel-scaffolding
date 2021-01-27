@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b52af42724e3ce448cb29ee5feb6d9e4",
+    "content-hash": "437d660bcad608bdaa58cb772f7f43ad",
     "packages": [
         {
             "name": "phel-lang/phel-composer-plugin",
@@ -71,12 +71,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phel-lang/phel-lang.git",
-                "reference": "8bf7c69acb527ef1816485d1a05705681108737e"
+                "reference": "47a05261db7339bd5a77a57d0e33d56766815bcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/8bf7c69acb527ef1816485d1a05705681108737e",
-                "reference": "8bf7c69acb527ef1816485d1a05705681108737e",
+                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/47a05261db7339bd5a77a57d0e33d56766815bcb",
+                "reference": "47a05261db7339bd5a77a57d0e33d56766815bcb",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "issues": "https://github.com/phel-lang/phel-lang/issues",
                 "source": "https://github.com/phel-lang/phel-lang/tree/master"
             },
-            "time": "2021-01-23T09:22:31+00:00"
+            "time": "2021-01-27T06:57:58+00:00"
         }
     ],
     "packages-dev": [],
