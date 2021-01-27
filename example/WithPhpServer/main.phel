@@ -1,21 +1,32 @@
 (ns with-php-server\main
-  (:require phel-scaffolding\my-module :refer [adder])
+  #(:require phel-scaffolding\my-module :refer [adder])
   (:require phel\html :refer [html doctype]))
 
 (def styles
-  (html
-   [:head
-    [:link @{:rel "stylesheet" :href "style.css"}]]))
+  [:head
+   [:meta @{:charset "utf-8"}]
+   [:meta @{:name "viewport" :content "width=device-width, initial-scale=1"}]
+   [:link @{:rel "stylesheet" :href "style.css"}]
+   [:title "Phel-lang"]])
+
+(def logo
+  [:div @{:class "logo"}
+   [:img @{:src "/logo.svg" :width "360"}]])
+
+(def link
+  [:div @{:class "links"}
+   [:a @{:href "https://phel-lang.org/"} "Homepage"]
+   [:a @{:href "https://phel-lang.org/documentation/getting-started/"} "Getting started"]
+   [:a @{:href "https://github.com/phel-lang/phel-lang"} "GitHub"]
+   [:a @{:href "https://gitter.im/phel-lang/community"} "Community"]])
 
 (def content
-  (html
-   (doctype :html5)
-   [:div @{:class [:center]}
-    [:h1 "Hello Phel"]
-    [:div @{:class "logo"}
-     [:a @{:href "https://phel-lang.org/" :target "_blank"}
-      [:img @{:src "/logo.svg"}]]]
-    [:br]
-    [:p "The adder result is " (adder 1 2 3)]]))
+  [:div @{:class "flex-center position-ref full-height"}
+   [:div @{:class "content"}
+    logo link]])
 
-(print styles content)
+(print
+ (html
+  (doctype :html5)
+  styles
+  content))
