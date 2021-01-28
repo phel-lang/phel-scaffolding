@@ -1,10 +1,6 @@
 html, body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: "Helvetica","Arial",sans-serif;
+    font-family: "Helvetica", "Arial", sans-serif;
     font-weight: 200;
-    height: 100vh;
-    margin: 0;
 }
 
 .full-height {
@@ -27,8 +23,9 @@ html, body {
 
 .links > a {
     color: #35157f;
-    padding: 0 25px;
-    font-weight: 600;
+    padding: 0 15px;
+    font-weight: bolder;
+    font-size: larger;
     letter-spacing: .1rem;
     text-decoration: none;
 }

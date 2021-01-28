@@ -1,4 +1,4 @@
-(ns phel-scaffolding\Web\views\main
+(ns phel-scaffolding\web\views\main
   (:require phel\html :refer [html doctype]))
 
 (def styles
