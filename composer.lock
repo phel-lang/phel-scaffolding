@@ -71,12 +71,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phel-lang/phel-lang.git",
-                "reference": "47a05261db7339bd5a77a57d0e33d56766815bcb"
+                "reference": "487670f76444dba3cb165f5b3b349fca2078064e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/47a05261db7339bd5a77a57d0e33d56766815bcb",
-                "reference": "47a05261db7339bd5a77a57d0e33d56766815bcb",
+                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/487670f76444dba3cb165f5b3b349fca2078064e",
+                "reference": "487670f76444dba3cb165f5b3b349fca2078064e",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "issues": "https://github.com/phel-lang/phel-lang/issues",
                 "source": "https://github.com/phel-lang/phel-lang/tree/master"
             },
-            "time": "2021-01-27T06:57:58+00:00"
+            "time": "2021-01-27T21:05:56+00:00"
         }
     ],
     "packages-dev": [],
