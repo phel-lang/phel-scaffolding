@@ -29,8 +29,8 @@ You can either use it from your local machine OR using docker.
 ### Phel code
 
 1. Write your phel code in `src/`
-1. Execute your code with `./vendor/bin/phel run example/CommandLine/main.phel`
-1. Or with a PHP server with `php -S localhost:8000 -t ./example/WithPhpServer`
+1. Execute your code with `./vendor/bin/phel run src/command/main.phel`
+1. Or with a PHP server with `php -S localhost:8000 -t ./src/web`
 
 ### Tests
 
