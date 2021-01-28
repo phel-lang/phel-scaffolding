@@ -1,4 +1,4 @@
-(ns phel-scaffolding\my-module)
+(ns phel-scaffolding\Modules\adder-module)
 
 (defn adder
   "An example of a function."

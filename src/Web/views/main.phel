@@ -1,17 +1,16 @@
-(ns with-php-server\main
-  #(:require phel-scaffolding\my-module :refer [adder])
+(ns phel-scaffolding\Web\views\main
   (:require phel\html :refer [html doctype]))
 
 (def styles
   [:head
    [:meta @{:charset "utf-8"}]
    [:meta @{:name "viewport" :content "width=device-width, initial-scale=1"}]
-   [:link @{:rel "stylesheet" :href "style.css"}]
+   [:link @{:rel "stylesheet" :href "./css/style.css"}]
    [:title "Phel-lang"]])
 
 (def logo
   [:div @{:class "logo"}
-   [:img @{:src "/logo.svg" :width "360"}]])
+   [:img @{:src "/images/logo.svg" :width "360"}]])
 
 (def link
   [:div @{:class "links"}

@@ -11,9 +11,7 @@
   "extra": {
     "phel": {
       "loader": {
-        "phel-scaffolding\\": "src/",
-        "command-line\\": "example/CommandLine/",
-        "with-php-server\\": "example/WithPhpServer/"
+        "phel-scaffolding\\": "src/"
       },
       "loader-dev": {
         "phel-scaffolding-tests\\": "tests/"

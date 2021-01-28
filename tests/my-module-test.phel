@@ -1,6 +1,0 @@
-(ns phel-scaffolding-tests\my-module-test
-  (:require phel-scaffolding\my-module :refer [adder])
-  (:require phel\test :refer [deftest is]))
-
-(deftest test-adder
-  (is (= 6 (adder 1 2 3))))
