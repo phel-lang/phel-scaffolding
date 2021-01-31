@@ -1,22 +1,19 @@
 (ns phel-scaffolding\web\views\main
   (:require phel\html :refer [html doctype]))
 
-(def styles
+(def head
   [:head
    [:meta @{:charset "utf-8"}]
    [:meta @{:name "viewport" :content "width=device-width, initial-scale=1"}]
    [:link @{:rel "stylesheet" :href "./css/style.css"}]
+   [:link @{:rel "icon" :type "image/png" :href "./images/favicon-32.png"}]
    [:title "Phel-lang"]])
-
-(def favicon
-  [:head
-    [:link @{:rel "icon" :type "image/png" :href "./images/favicon-32.png"}]])
 
 (def logo
   [:div @{:class "logo"}
    [:img @{:src "/images/logo.svg" :width "360"}]])
 
-(def link
+(def links
   [:div @{:class "links"}
    [:a @{:href "https://phel-lang.org/"} "Homepage"]
    [:a @{:href "https://phel-lang.org/documentation/getting-started/"} "Getting started"]
@@ -25,12 +22,10 @@
 
 (def content
   [:div @{:class "flex-center position-ref full-height"}
-   [:div @{:class "content"}
-    logo link]])
+   [:div @{:class "content"} logo links]])
 
 (print
  (html
   (doctype :html5)
-  styles
-  favicon
+  head
   content))
