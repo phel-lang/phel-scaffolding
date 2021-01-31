@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "ext-readline": "*",
-    "phel-lang/phel-lang": "0.1.0"
+    "phel-lang/phel-lang": "^0.1"
   },
   "minimum-stability": "dev",
   "extra": {
