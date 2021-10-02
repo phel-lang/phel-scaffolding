@@ -1,24 +1,19 @@
 {
   "name": "phel-lang/phel-scaffolding",
-  "keywords": ["phel","lisp","functional","language"],
+  "keywords": [
+    "phel",
+    "lisp",
+    "functional",
+    "language"
+  ],
   "homepage": "https://phel-lang.org/",
   "license": "MIT",
   "require": {
     "ext-readline": "*",
-    "phel-lang/phel-lang": "^0.3"
+    "phel-lang/phel-lang": "dev-master"
   },
-  "minimum-stability": "dev",
-  "extra": {
-    "phel": {
-      "loader": {
-        "phel-scaffolding\\": "src/"
-      },
-      "loader-dev": {
-        "phel-scaffolding-tests\\": "tests/"
-      },
-      "tests": [
-          "tests/"
-      ]
-    }
-  }
+  "require-dev": {
+    "symfony/var-dumper": "5.4.x-dev"
+  },
+  "minimum-stability": "dev"
 }
