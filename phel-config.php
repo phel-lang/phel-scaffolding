@@ -7,7 +7,7 @@ return [
     'test-dirs' => ['tests'],
     'vendor-dir' => 'vendor',
     'export' => [
-        'directories' => ['src/phel'],
+        'directories' => ['src/modules'],
         'namespace-prefix' => 'PhelGenerated',
         'target-directory' => 'src/PhelGenerated',
     ],

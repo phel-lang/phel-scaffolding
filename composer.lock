@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "gacela-project/gacela",
-            "version": "0.9.0",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "0ce8751f096f1bf245727ad117ad062b09bba61e"
+                "reference": "ecb27c8243dad3e0ea7fae5ed1c9322a2904e792"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/0ce8751f096f1bf245727ad117ad062b09bba61e",
-                "reference": "0ce8751f096f1bf245727ad117ad062b09bba61e",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/ecb27c8243dad3e0ea7fae5ed1c9322a2904e792",
+                "reference": "ecb27c8243dad3e0ea7fae5ed1c9322a2904e792",
                 "shasum": ""
             },
             "require": {
@@ -26,12 +26,12 @@
                 "symfony/console": "^5.3"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0",
+                "friendsofphp/php-cs-fixer": "^3.1",
                 "phpbench/phpbench": "^1.1",
-                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan": "^1.0.x-dev",
                 "phpunit/phpunit": "^9.5",
                 "symfony/var-dumper": "^5.3",
-                "vimeo/psalm": "^4.9"
+                "vimeo/psalm": "^4.10"
             },
             "suggest": {
                 "gacela-project/gacela-yaml-config-reader": "Allows to read yml/yaml config files"
@@ -67,9 +67,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/0.9.0"
+                "source": "https://github.com/gacela-project/gacela/tree/0.10.0"
             },
-            "time": "2021-08-27T15:32:11+00:00"
+            "time": "2021-10-04T09:03:50+00:00"
         },
         {
             "name": "phel-lang/phel-lang",
@@ -77,17 +77,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phel-lang/phel-lang.git",
-                "reference": "8d3ae7961a32964d6166798c756090491e9cfeea"
+                "reference": "ddae65fb7b7c5b9eeffc34f7fa0fbb599d97a6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/8d3ae7961a32964d6166798c756090491e9cfeea",
-                "reference": "8d3ae7961a32964d6166798c756090491e9cfeea",
+                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/ddae65fb7b7c5b9eeffc34f7fa0fbb599d97a6fa",
+                "reference": "ddae65fb7b7c5b9eeffc34f7fa0fbb599d97a6fa",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "gacela-project/gacela": "^0.9",
+                "gacela-project/gacela": "^0.10",
                 "php": ">=7.4",
                 "phpunit/php-timer": "^5.0",
                 "symfony/console": "^5.3"
@@ -133,7 +133,7 @@
                 "issues": "https://github.com/phel-lang/phel-lang/issues",
                 "source": "https://github.com/phel-lang/phel-lang/tree/master"
             },
-            "time": "2021-10-02T18:12:49+00:00"
+            "time": "2021-10-04T10:22:18+00:00"
         },
         {
             "name": "phpunit/php-timer",
@@ -984,33 +984,31 @@
         },
         {
             "name": "symfony/string",
-            "version": "6.0.x-dev",
+            "version": "5.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "966d73c27464baca0642335a5952a77bfd602ebb"
+                "reference": "412eda2039ad5466f823c3696c0c309e6c140086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/966d73c27464baca0642335a5952a77bfd602ebb",
-                "reference": "966d73c27464baca0642335a5952a77bfd602ebb",
+                "url": "https://api.github.com/repos/symfony/string/zipball/412eda2039ad5466f823c3696c0c309e6c140086",
+                "reference": "412eda2039ad5466f823c3696c0c309e6c140086",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2",
+                "php": ">=7.2.5",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "symfony/translation-contracts": "<2.0"
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "~1.15"
             },
             "require-dev": {
-                "symfony/error-handler": "^5.4|^6.0",
-                "symfony/http-client": "^5.4|^6.0",
-                "symfony/translation-contracts": "^2.0|^3.0",
-                "symfony/var-exporter": "^5.4|^6.0"
+                "symfony/error-handler": "^4.4|^5.0|^6.0",
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/translation-contracts": "^1.1|^2",
+                "symfony/var-exporter": "^4.4|^5.0|^6.0"
             },
             "type": "library",
             "autoload": {
@@ -1049,7 +1047,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/6.0"
+                "source": "https://github.com/symfony/string/tree/5.4"
             },
             "funding": [
                 {
@@ -1065,7 +1063,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-17T09:03:20+00:00"
+            "time": "2021-09-17T07:22:48+00:00"
         }
     ],
     "packages-dev": [
