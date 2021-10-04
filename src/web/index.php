@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
-$runtime = require __DIR__ . '/../../vendor/PhelRuntime.php';
+use Phel\Run\RunFacade;
 
-$runtime->loadNs('phel-scaffolding\web\views\main');
+require dirname(__DIR__) . '/../vendor/autoload.php';
+
+$runFacade = new RunFacade();
+$runFacade->runNamespace('phel-scaffolding\web\views\main');
