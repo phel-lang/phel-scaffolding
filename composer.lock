@@ -77,12 +77,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phel-lang/phel-lang.git",
-                "reference": "ddae65fb7b7c5b9eeffc34f7fa0fbb599d97a6fa"
+                "reference": "0c730c5d69d5071c0395ee50d46046982267958a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/ddae65fb7b7c5b9eeffc34f7fa0fbb599d97a6fa",
-                "reference": "ddae65fb7b7c5b9eeffc34f7fa0fbb599d97a6fa",
+                "url": "https://api.github.com/repos/phel-lang/phel-lang/zipball/0c730c5d69d5071c0395ee50d46046982267958a",
+                "reference": "0c730c5d69d5071c0395ee50d46046982267958a",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,7 @@
                 "issues": "https://github.com/phel-lang/phel-lang/issues",
                 "source": "https://github.com/phel-lang/phel-lang/tree/master"
             },
-            "time": "2021-10-04T10:22:18+00:00"
+            "time": "2021-10-04T20:17:42+00:00"
         },
         {
             "name": "phpunit/php-timer",
