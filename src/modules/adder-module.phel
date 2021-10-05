@@ -2,5 +2,6 @@
 
 (defn adder
   "An example of a function."
+  {:export true}
   [& numbers]
   (apply + numbers))

@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
-$runtime = require __DIR__ . '/../../vendor/PhelRuntime.php';
+use Phel\Phel;
 
-$runtime->loadNs('phel-scaffolding\web\views\main');
+$projectRootDir = dirname(__DIR__, 2) . '/';
+
+require $projectRootDir . 'vendor/autoload.php';
+
+Phel::run($projectRootDir, 'phel-scaffolding\web\views\main');
