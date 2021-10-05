@@ -10,10 +10,9 @@
   "license": "MIT",
   "require": {
     "ext-readline": "*",
-    "phel-lang/phel-lang": "dev-master"
+    "phel-lang/phel-lang": "^0.4"
   },
   "require-dev": {
     "symfony/var-dumper": "5.4.x-dev"
-  },
-  "minimum-stability": "dev"
+  }
 }
