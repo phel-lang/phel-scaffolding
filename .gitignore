@@ -1,4 +1,12 @@
-.phel-repl-history
-src/PhelGenerated/
 .idea/
+.vscode/
+data/
+out/
+PhelGenerated/
+var/
 vendor/
+
+!PhelGenerated/.gitkeep
+*.cache
+.phel-repl-history
+phel-config-local.php
