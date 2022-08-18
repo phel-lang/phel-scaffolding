@@ -22,7 +22,7 @@ You can either use it from your local machine OR using docker.
 #### Using Docker
 
 1. Clone this repo
-1. Build the image | `docker-compose up --build`
+1. Build the image | `docker-compose up -d --build`
 1. Go inside the console | `docker exec -ti -u dev phel_scaffolding bash`
 1. Install the dependencies | `composer install`
 
