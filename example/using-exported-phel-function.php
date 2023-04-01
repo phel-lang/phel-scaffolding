@@ -3,9 +3,9 @@
 use Phel\Phel;
 use PhelGenerated\PhelScaffolding\Modules\AdderModule;
 
-$projectRootDir = dirname(__DIR__) . '/';
+$projectRootDir = dirname(__DIR__);
 
-require $projectRootDir . 'vendor/autoload.php';
+require $projectRootDir . '/vendor/autoload.php';
 
 Phel::run($projectRootDir, 'phel-scaffolding\modules\adder-module');
 
