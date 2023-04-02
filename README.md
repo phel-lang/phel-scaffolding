@@ -1,3 +1,14 @@
+## Deprecated
+
+This repository has become too complex for a scaffolding. We believe that spliting this repository into two might be helpful for the two common and different use cases: cli-app or website.
+
+Therefore, we have decided to deprecate this repository in favor of:
+
+- [cli-skeleton](https://github.com/phel-lang/cli-skeleton): A skeleton to build your **cli-app** using Phel.
+- [web-skeleton](https://github.com/phel-lang/web-skeleton): A skeleton to build a **website** using Phel.
+
+---
+
 # Phel Scaffolding
 
 [Phel](https://phel-lang.org/) is a functional programming language that compiles to PHP. 
